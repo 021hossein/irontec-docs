@@ -1,0 +1,8 @@
+kind: ExternalService
+name: irontec-docs
+spec:
+  image_pull_policy: Always
+  port: 80
+  source:
+    context: build
+    project_type: static_website
