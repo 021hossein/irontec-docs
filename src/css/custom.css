@@ -1,3 +1,4 @@
+@import 'fonts.css';
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -6,25 +7,193 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #338CF5;
+  --ifm-color-primary-dark: #0070F4;
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-footer-color: rgb(102,102,102);
+  --ifm-footer-title-color: rgb(55, 55, 55);
+  --ifm-footer-background-color: rgb(251, 251, 251);
+  --ifm-menu-color-active: rgb(16, 16, 16);
+  --ifm-menu-color: rgb(102,102,102);
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: Vazir;
+  --ifm-h1-font-size: 2rem;
+  --ifm-h2-font-size: 1.5rem;
+  --ifm-h3-font-size: 1.2rem;
+  --ifm-h4-font-size: 1rem;
+  --ifm-navbar-padding-horizontal: 1.5rem;
+
+  --ifm-menu-link-sublist-icon: url('./icons/expend.svg')
+
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary: #80b4fd;
+  --ifm-color-primary-dark: #5ea2f3;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-footer-color: rgba(255, 255, 255, 0.6);
+  --ifm-footer-title-color: rgba(255, 255, 255, 0.88);
+  --ifm-footer-background-color: rgb(24, 24, 26);
+  --ifm-menu-color-active: rgb(224, 224, 224);
+  --ifm-menu-color: rgb(204, 204, 204);
+
+  --ifm-link-hover-color: rgba(113, 158, 245, 0.8);
+
+  --ifm-heading-color: #fff;
+
+
+  --ifm-menu-link-sublist-icon-filter: invert(100%);
+}
+
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+html,
+h1, h2, h3, h4, h5, body, button {
+  font-family: 'Vazir', sans-serif;
+}
+
+h1 {
+  font-size: 2rem !important;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+}
+
+h3 {
+  font-size: 1.2rem !important;
+}
+
+
+.header-github-link:hover {
+  opacity: 0.6;
+}
+
+.header-github-link:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+  no-repeat;
+}
+
+html[data-theme='dark'] .header-github-link:before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+  no-repeat;
+}
+
+.row .col.col--2 {
+  --ifm-col-width: calc(2 / 12 * 100%);
+  flex: 0 0 var(--ifm-col-width);
+  max-width: var(--ifm-col-width);
+}
+.row .col.col--7 {
+  --ifm-col-width: calc(7 / 12 * 100%);
+  flex: 0 0 var(--ifm-col-width);
+  max-width: var(--ifm-col-width);
+}
+.btn {
+  padding: .5rem 1rem !important;;
+  --tw-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  border-color: transparent;
+  border-radius: .25rem;
+  border-width: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  background-color: #191919;
+  color:#eaeaea;
+  line-height: 1.375;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+
+
+}
+.menu {
+  border-top: var(--ifm-global-border-width) solid var(--ifm-color-emphasis-200);
+  font-weight: var(--ifm-font-weight-normal);
+  margin-top: calc(-1 * var(--ifm-global-border-width));
+  padding-top: calc(1rem + var(--ifm-toc-padding-vertical)) !important;
+}
+
+.footer__item {
+  font-size: 14px;
+}
+
+.menu__link--active {
+  font-weight: var(--ifm-font-weight-semibold);
+}
+
+
+.navbar--fixed-top {
+  position: sticky;
+  top: 0;
+  height: 72px;
+}
+.footer__copyright{
+  margin-top: 48px;
+  margin-bottom: -12px;
+  border-top-width: 1px;
+  font-size: 14px;
+}
+
+.rectangle{
+  width: 100%;
+  height: 3%;
+  background: white;
+  position: absolute;
+}
+
+.screenBorder {
+  border: 1px solid rgba(0, 0, 0, .05);
+  border-radius: 10% / 5%;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateZ(0);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.aaa{
+  margin: auto;
+  max-width: 342px;
+}
+.aaaa{
+  height: 0;
+  padding-bottom: 216%;
+  width: 100%;
+  position: relative;
+}
+#screenVideo{
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }

@@ -2,46 +2,63 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# معرفی برنامه
 
-## Getting Started
 
-Get started by **creating a new site**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-### What you'll need
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+import upAndDownURL from '/static/img/login.webm';
+export const Highlight = ({children, color}) => (
+<video id="screenVideo"  autoplay="1" muted="1" loop="1" playsinline="1"
+>
+  <source src={children}/>
+</video>
+);
 
-## Generate a new site
 
-Generate a new Docusaurus site using the **classic template**.
+export const Center = ({children}) => (
+<div style={{textAlign: 'center'}}>
+{children}
+</div>
+);
 
-The classic template will automatically be added to your project after you run the command:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+<div class="aaa">
+<div class="aaaa">
+<div class="screenBorder">
+    <div class="rectangle"></div>
+    <Highlight>{upAndDownURL}</Highlight>
+</div>
+</div>
+</div>
 
-The command also installs all necessary dependencies you need to run Docusaurus.
 
-## Start your site
 
-Run the development server:
 
-```bash
-cd my-website
-npm run start
-```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+
+
+
+# معرفی برنامه
+
+صفحه‌کلید یا کیبورد (به انگلیسی: Keyboard) یکی از اجزاء پیرامونی رایانه است. صفحه‌کلید همانند موشواره، یک واسط کاربر سخت‌افزاری محسوب می‌شود که کاربر از طریق آن، با رایانه ارتباط برقرار می‌کند. صفحه‌کلید از تعداد زیادی کلید تشکیل شده است. صفحه‌کلید در مدلها و اقسام گوناگون ساخته می‌شود. فیش آن معمولاً از نوع PS2 بوده و در مدل‌های اخیر بنفش رنگ است. این فیش خروجی صفحه‌کلید بوده و به مادربرد وصل می‌‌شود. در حال حاضر بیشتر کیبوردها از طریق درگاه یو اس بی به کامپیوتر متصل میشوند. صفحه کلید از یک سری کلید تشکیل شده که به ریزپردازنده‌هایی متصل شده‌اند که حالت هر کلید را نشان می‌دهند. پردازشگر درون صفحه کلید پارامترهایی را که برای استفاده مهم است می‌فهمد. برای مثال موقعیت کلید که در قالب کلید است، مقدار جهش و نمایان شدن سرعت انتقال مطلب تایپ شده، حروف فرستاده شده به رایانه که در یک میانگیر حافظه نگهداری می‌شود و غیره. اطلاعات از طریق رابط به رایانه فرستاده می‌شود.
+
+## دریافت برنامه 
+
+صفحه‌کلید یا کیبورد (به انگلیسی: Keyboard) یکی از اجزاء پیرامونی رایانه است. صفحه‌کلید همانند موشواره، یک واسط کاربر سخت‌افزاری محسوب می‌شود که کاربر از طریق آن، با رایانه ارتباط برقرار می‌کند. صفحه‌کلید از تعداد زیادی کلید تشکیل شده است. صفحه‌کلید در مدلها و اقسام گوناگون ساخته می‌شود. فیش آن معمولاً از نوع PS2 بوده و در مدل‌های اخیر بنفش رنگ است. این فیش خروجی صفحه‌کلید بوده و به مادربرد وصل می‌‌شود. در حال حاضر بیشتر کیبوردها از طریق درگاه یو اس بی به کامپیوتر متصل میشوند. صفحه کلید از یک سری کلید تشکیل شده که به ریزپردازنده‌هایی متصل شده‌اند که حالت هر کلید را نشان می‌دهند. پردازشگر درون صفحه کلید پارامترهایی را که برای استفاده مهم است می‌فهمد. برای مثال موقعیت کلید که در قالب کلید است، مقدار جهش و نمایان شدن سرعت انتقال مطلب تایپ شده، حروف فرستاده شده به رایانه که در یک میانگیر حافظه نگهداری می‌شود و غیره. اطلاعات از طریق رابط به رایانه فرستاده می‌شود.
+
+## ورود به حساب کاربری 
+
+صفحه‌کلید یا کیبورد (به انگلیسی: Keyboard) یکی از اجزاء پیرامونی رایانه است. صفحه‌کلید همانند موشواره، یک واسط کاربر سخت‌افزاری محسوب می‌شود که کاربر از طریق آن، با رایانه ارتباط برقرار می‌کند. صفحه‌کلید از تعداد زیادی کلید تشکیل شده است. صفحه‌کلید در مدلها و اقسام گوناگون ساخته می‌شود. فیش آن معمولاً از نوع PS2 بوده و در مدل‌های اخیر بنفش رنگ است. این فیش خروجی صفحه‌کلید بوده و به مادربرد وصل می‌‌شود. در حال حاضر بیشتر کیبوردها از طریق درگاه یو اس بی به کامپیوتر متصل میشوند. صفحه کلید از یک سری کلید تشکیل شده که به ریزپردازنده‌هایی متصل شده‌اند که حالت هر کلید را نشان می‌دهند. پردازشگر درون صفحه کلید پارامترهایی را که برای استفاده مهم است می‌فهمد. برای مثال موقعیت کلید که در قالب کلید است، مقدار جهش و نمایان شدن سرعت انتقال مطلب تایپ شده، حروف فرستاده شده به رایانه که در یک میانگیر حافظه نگهداری می‌شود و غیره. اطلاعات از طریق رابط به رایانه فرستاده می‌شود.
+
+## ثبت یک مشتری جدید 
+
+صفحه‌کلید یا کیبورد (به انگلیسی: Keyboard) یکی از اجزاء پیرامونی رایانه است. صفحه‌کلید همانند موشواره، یک واسط کاربر سخت‌افزاری محسوب می‌شود که کاربر از طریق آن، با رایانه ارتباط برقرار می‌کند. صفحه‌کلید از تعداد زیادی کلید تشکیل شده است. صفحه‌کلید در مدلها و اقسام گوناگون ساخته می‌شود. فیش آن معمولاً از نوع PS2 بوده و در مدل‌های اخیر بنفش رنگ است. این فیش خروجی صفحه‌کلید بوده و به مادربرد وصل می‌‌شود. در حال حاضر بیشتر کیبوردها از طریق درگاه یو اس بی به کامپیوتر متصل میشوند. صفحه کلید از یک سری کلید تشکیل شده که به ریزپردازنده‌هایی متصل شده‌اند که حالت هر کلید را نشان می‌دهند. پردازشگر درون صفحه کلید پارامترهایی را که برای استفاده مهم است می‌فهمد. برای مثال موقعیت کلید که در قالب کلید است، مقدار جهش و نمایان شدن سرعت انتقال مطلب تایپ شده، حروف فرستاده شده به رایانه که در یک میانگیر حافظه نگهداری می‌شود و غیره. اطلاعات از طریق رابط به رایانه فرستاده می‌شود.
+
+##  ثبت حوله 
+برای ثبت حواله کافیه ...
