@@ -6,3 +6,5 @@ spec:
   source:
     context: build
     project_type: static_website
+  domains:
+  - name: docs.irontec.ir

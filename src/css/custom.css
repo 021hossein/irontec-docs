@@ -168,7 +168,7 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 .screenBorder {
-  border: 1px solid rgba(0, 0, 0, .05);
+  border: 1px solid rgba(0, 0, 0, .07);
   border-radius: 10% / 5%;
   box-sizing: border-box;
   overflow: hidden;
@@ -180,16 +180,18 @@ html[data-theme='dark'] .header-github-link:before {
   width: 100%;
 }
 
-.aaa{
+.screenBorderBase{
   margin: auto;
   max-width: 342px;
 }
-.aaaa{
+
+.screenBorderBase2{
   height: 0;
   padding-bottom: 216%;
   width: 100%;
   position: relative;
 }
+
 #screenVideo{
   height: 100%;
   max-width: none;
