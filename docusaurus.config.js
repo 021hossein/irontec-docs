@@ -15,8 +15,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'irontec', // Usually your GitHub org/user name.
-  projectName: 'documentation', // Usually your repo name.
+  organizationName: '021hossein', // Usually your GitHub org/user name.
+  projectName: 'irontec-docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -55,14 +55,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: 'shimmer',
-        content:
-            ' مثلا اطلاعیه ساختگی اطلاعیه ساختگی اطلاعیه ساختگی اطلاعیه ساختگی <a target="_blank" href="https://shimmer.network">اطلاعات بیشتر</a>.',
-        backgroundColor: '#fff',
-        textColor: '#000',
-        isCloseable: true,
-      },
+//      announcementBar: {
+//        id: 'shimmer',
+//        content:
+//            ' مثلا اطلاعیه ساختگی اطلاعیه ساختگی اطلاعیه ساختگی اطلاعیه ساختگی <a target="_blank" href="https://shimmer.network">اطلاعات بیشتر</a>.',
+//        backgroundColor: '#fff',
+//        textColor: '#000',
+//        isCloseable: true,
+//      },
       navbar: {
         title: '',
         logo: {
