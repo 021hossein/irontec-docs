@@ -9,3 +9,14 @@ import ReportMarketerPerformance from '/static/video/report-marketer-commission.
 #  گزارش عملکرد کارشناسان 
 
 <ScreenVideo>{ReportMarketerPerformance}</ScreenVideo>
+
+
+نمودار:
+
+حجم فررش
+سود خالص
+کمسیون
+مالیات عملکرد
+سود ناخالص
+میانگین قیمت خرید
+میانگین قیمت فروش
